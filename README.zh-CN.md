@@ -128,12 +128,6 @@ Impeccable Compact 旨在：
 
 > 从 https://github.com/watermelon-rider/impeccable-compact 安装 `skills/imp-compact`、`skills/imp-style` 和 `skills/imp-bold` 三个 skill。
 
-在 Codex 中一行安装全部三个 skill：
-
-```sh
-python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" --repo watermelon-rider/impeccable-compact --path skills/imp-compact skills/imp-style skills/imp-bold
-```
-
 | Skill | 安装路径 | 用途 |
 |---|---|---|
 | [imp-compact](https://github.com/watermelon-rider/impeccable-compact/tree/main/skills/imp-compact) | `skills/imp-compact` | 构建或改进网站和网页应用 |

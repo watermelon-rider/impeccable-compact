@@ -136,11 +136,7 @@ Give your agent this instruction:
 
 > Install the skills from https://github.com/watermelon-rider/impeccable-compact at paths `skills/imp-compact`, `skills/imp-style`, and `skills/imp-bold`.
 
-Install all three skills in Codex:
-
-```sh
-python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" --repo watermelon-rider/impeccable-compact --path skills/imp-compact skills/imp-style skills/imp-bold
-```
+Available skills:
 
 | Skill | Install path | Purpose |
 |---|---|---|
