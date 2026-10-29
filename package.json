@@ -1,0 +1,22 @@
+{
+  "name": "@impeccable/compact",
+  "description": "Experimental compact derivative of Impeccable for responsive website and web-app design work",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node scripts/check-budgets.mjs && node --test tests/contract.test.mjs tests/styles.test.mjs tests/expressive.test.mjs",
+    "check": "node scripts/check-budgets.mjs && node --test tests/contract.test.mjs",
+    "test:behavior": "node --test --test-timeout=700000 tests/behavior.test.mjs",
+    "test:bold-behavior": "node scripts/build.mjs && node --test --test-timeout=700000 tests/expressive-behavior.test.mjs",
+    "check:budgets": "node scripts/check-budgets.mjs",
+    "generate:style": "node scripts/generate-style.mjs",
+    "generate:bold": "node scripts/generate-bold.mjs",
+    "install:runtime": "node scripts/install-runtime.mjs"
+  }
+}
+

@@ -1,0 +1,79 @@
+{
+  "craft": {
+    "description": "Build or redesign a responsive web surface. Compatibility alias for the ordinary build flow.",
+    "category": "Build"
+  },
+  "shape": {
+    "description": "Resolve a blocking product and surface decision, then build through the normal build flow.",
+    "category": "Build"
+  },
+  "init": {
+    "description": "Capture durable product truth in PRODUCT.md.",
+    "category": "System"
+  },
+  "document": {
+    "description": "Record the incumbent visual system in DESIGN.md and its sidecar.",
+    "category": "System"
+  },
+  "extract": {
+    "description": "Consolidate repeated tokens and component patterns into the existing design system.",
+    "category": "System"
+  },
+  "critique": {
+    "description": "Review a web interface for UX and visual design quality.",
+    "category": "Review"
+  },
+  "audit": {
+    "description": "Audit accessibility, responsiveness, implementation, and rendered quality.",
+    "category": "Review"
+  },
+  "polish": {
+    "description": "Fix remaining hierarchy, consistency, and interaction defects before shipping.",
+    "category": "Refine"
+  },
+  "bolder": {
+    "description": "Amplify the existing visual identity without replacing it.",
+    "category": "Refine"
+  },
+  "quieter": {
+    "description": "Reduce visual intensity while preserving identity and task completion.",
+    "category": "Refine"
+  },
+  "distill": {
+    "description": "Remove unnecessary complexity from an existing interface.",
+    "category": "Refine"
+  },
+  "harden": {
+    "description": "Cover real-world errors, overflow, i18n, and edge states.",
+    "category": "Refine"
+  },
+  "onboard": {
+    "description": "Improve first-run flows, empty states, and activation.",
+    "category": "Refine"
+  },
+  "colorize": {
+    "description": "Give color a coherent role in hierarchy, action, state, and wayfinding.",
+    "category": "Refine"
+  },
+  "typeset": {
+    "description": "Improve type roles, hierarchy, measure, and legibility.",
+    "category": "Refine"
+  },
+  "layout": {
+    "description": "Improve composition, spacing, rhythm, and responsive priority.",
+    "category": "Refine"
+  },
+  "clarify": {
+    "description": "Improve labels, instructions, errors, empty states, and recovery copy.",
+    "category": "Refine"
+  },
+  "adapt": {
+    "description": "Adapt responsive web layouts for viewport, input method, and content pressure.",
+    "category": "Refine"
+  },
+  "optimize": {
+    "description": "Diagnose and fix measured web UI performance problems.",
+    "category": "Refine"
+  }
+}
+

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "neo-brutalist",
+    "name": "Neo-brutalist",
+    "summary": "Raw blocks, hard edges, high-contrast type, and visible structural pressure.",
+    "keywords": ["brutalist", "raw", "blocky", "hard-shadow", "anti-polish"],
+    "useFor": ["creative tooling", "cultural events", "strong editorial launches", "developer products"],
+    "avoidFor": ["regulated interfaces", "clinical workflows", "content where every effect competes"],
+    "constraints": [
+      "Use hard offset planes and heavy rules as a complete spatial system, not isolated stickers.",
+      "Use compressed or blocky display type with clear scale jumps.",
+      "Keep navigation and controls unmistakably legible inside the raw geometry.",
+      "Use one interaction snap or displacement, not constant jitter."
+    ],
+    "motion": "Short stepped displacement or shadow shifts on action; no ambient wobble.",
+    "palette": ["black #121212", "paper #f4f0e4", "acid yellow #e8ff38", "hot red #ff4c3b"],
+    "typography": "Condensed grotesk with a heavy display face",
+    "layout": "Hard grid, thick outlines, overlapping blocks",
+    "preview": "assets/previews/neo-brutalist.webp"
+  },
+  {
+    "id": "maximal-collage",
+    "name": "Maximal Collage",
+    "summary": "Layered fragments, mixed scales, clipped typography, and controlled visual overload.",
+    "keywords": ["maximal", "collage", "layered", "eclectic", "cutout"],
+    "useFor": ["festivals", "cultural institutions", "fashion", "creative portfolios"],
+    "avoidFor": ["dense operational tools", "high-stakes transactional flows"],
+    "constraints": [
+      "Build one readable focal route through the layers.",
+      "Use visible seams and cut edges; do not fake polish with generic cards.",
+      "Limit to a coherent set of three or four material families.",
+      "Keep every layer useful to sequence, meaning, or navigation."
+    ],
+    "motion": "Layered parallax with a strict hierarchy; only one plane responds strongly.",
+    "palette": ["ink #171519", "paper #f2e8d5", "acid pink #ff4fa3", "cobalt #2455ff"],
+    "typography": "Mixed editorial serif and compact grotesk",
+    "layout": "Overlapping cut-paper planes and fragmented columns",
+    "preview": "assets/previews/maximal-collage.webp"
+  },
+  {
+    "id": "kinetic-type",
+    "name": "Kinetic Type",
+    "summary": "Typography becomes the composition, sequence, and primary interaction.",
+    "keywords": ["kinetic", "typography", "motion", "sequence", "type-led"],
+    "useFor": ["campaigns", "creative launches", "portfolios", "identity sites"],
+    "avoidFor": ["data-heavy screens", "long-form help", "forms with no typographic patience"],
+    "constraints": [
+      "Use one typographic system with deliberate scale, weight, and direction changes.",
+      "Animate reading order or meaning, never every headline at once.",
+      "Preserve a static reading state and reduced-motion equivalent.",
+      "Navigation and actions still resolve to recognizable controls."
+    ],
+    "motion": "Marquee, type-on, or scroll-linked letter transforms; pause on focus.",
+    "palette": ["black #0d0d0f", "white #f7f4ed", "electric blue #3156ff", "signal orange #ff603d"],
+    "typography": "Large grotesk display with monospaced supporting copy",
+    "layout": "Type-led diagonal rails and composed negative space",
+    "preview": "assets/previews/kinetic-type.webp"
+  },
+  {
+    "id": "retro-futurist",
+    "name": "Retro-futurist",
+    "summary": "Interface fiction, instrument panels, luminous terminals, and analog-future detail.",
+    "keywords": ["retro-future", "terminal", "instrument", "sci-fi", "analog"],
+    "useFor": ["developer tools", "space and science", "gaming", "technical storytelling"],
+    "avoidFor": ["calm healthcare", "high-trust consumer finance"],
+    "constraints": [
+      "Use one coherent future instrument language across chrome and data.",
+      "Keep terminal and instrument references functional, not disguises.",
+      "Use glow as emitted light with a stable source and falloff.",
+      "Provide ordinary navigation and form behavior alongside the fiction."
+    ],
+    "motion": "Scan, cursor, and status transitions must be sparse and state-bound.",
+    "palette": ["void #090d0d", "phosphor #d6ff65", "amber #f8a91c", "steel #526063"],
+    "typography": "Technical monospace with a narrow display grotesk",
+    "layout": "Control-room grid, instrument bays, and ruled telemetry",
+    "preview": "assets/previews/retro-futurist.webp"
+  },
+  {
+    "id": "spatial-generative",
+    "name": "Spatial Generative",
+    "summary": "Depth, procedural geometry, light fields, and a singular spatial mechanism.",
+    "keywords": ["spatial", "generative", "3d", "particles", "depth"],
+    "useFor": ["AI infrastructure", "design technology", "data platforms", "digital launches"],
+    "avoidFor": ["low-end devices without fallback", "strict information-dense tables"],
+    "constraints": [
+      "Use one spatial mechanism that communicates the product rather than generic floating shapes.",
+      "Keep text and controls on a legible plane independent of motion.",
+      "Provide static and reduced-motion states with the same information.",
+      "Budget GPU and frame time; degrade geometry before removing meaning."
+    ],
+    "motion": "Camera drift or constructive motion tied to scroll and state; never constant orbiting.",
+    "palette": ["deep navy #05131f", "electric teal #35d0c6", "violet #7c61ff", "mist #e0eef0"],
+    "typography": "High-contrast sans with tabular technical labels",
+    "layout": "Central luminous field surrounded by calm semantic structure",
+    "preview": "assets/previews/spatial-generative.webp"
+  },
+  {
+    "id": "narrative-scroll",
+    "name": "Narrative Scroll",
+    "summary": "A paced story where composition, media, and scrolling reveal a mechanism.",
+    "keywords": ["narrative", "scroll", "story", "cinematic", "sequence"],
+    "useFor": ["launches", "research storytelling", "case studies", "product mechanisms"],
+    "avoidFor": ["admin tools", "tasks completed in one screen"],
+    "constraints": [
+      "Give each scroll chapter one idea, one visual state, and one outcome.",
+      "Use sticky or staged composition only when sequence carries meaning.",
+      "Provide non-scroll navigation and a readable static fallback.",
+      "Do not hide essential proof or actions behind the narrative effect."
+    ],
+    "motion": "Scroll-linked scene progression with visible chapter state; ensure reduced-motion equivalence.",
+    "palette": ["night #111418", "ember #ff7b3d", "sand #dec79f", "smoke #a7a6a1"],
+    "typography": "Editorial display serif with compact sans captions",
+    "layout": "Chaptered vertical journey with one anchored object",
+    "preview": "assets/previews/narrative-scroll.webp"
+  },
+  {
+    "id": "signal-glitch",
+    "name": "Signal Glitch",
+    "summary": "Controlled interruption, chromatic offsets, scanning, and high-tech instability.",
+    "keywords": ["glitch", "signal", "interference", "digital", "sharp"],
+    "useFor": ["security", "experimental media", "music", "edge computing"],
+    "avoidFor": ["medical", "calm collaboration", "long reading surfaces"],
+    "constraints": [
+      "Keep the base layout stable while one signal layer disrupts it.",
+      "Glitch state must not reduce text legibility or control certainty.",
+      "Use transition bursts around events rather than perpetual noise.",
+      "Respect reduced motion and avoid flashing beyond accessibility limits."
+    ],
+    "motion": "Event-triggered displacement and scan bursts; never continuous high-frequency flicker.",
+    "palette": ["black #050607", "white #f4f4ef", "cyan #41e8f2", "red #ff3d64"],
+    "typography": "Condensed grotesk with monospaced status text",
+    "layout": "Stable grid cut by one displaced signal layer",
+    "preview": "assets/previews/signal-glitch.webp"
+  },
+  {
+    "id": "character-led",
+    "name": "Character-led",
+    "summary": "A distinctive illustrated character or creature guides meaning and interaction.",
+    "keywords": ["character", "illustration", "play", "world", "friendly"],
+    "useFor": ["education", "consumer tools", "community", "onboarding"],
+    "avoidFor": ["serious compliance", "enterprise data-heavy dashboards"],
+    "constraints": [
+      "The character must reveal product meaning or interaction, never act as decorative clip art.",
+      "Keep one coherent illustration grammar and a printable silhouette.",
+      "Text, controls, and state remain usable without the character.",
+      "Use character motion for feedback or guidance, not constant distraction."
+    ],
+    "motion": "Small reaction loops tied to completion, errors, or guidance; rest at idle.",
+    "palette": ["cream #fff2d8", "coral #ff685c", "teal #0b8f82", "ink #22332f"],
+    "typography": "Rounded display sans with a sturdy text sans",
+    "layout": "Character-led composition with speech and action as visual material",
+    "preview": "assets/previews/character-led.webp"
+  }
+]
