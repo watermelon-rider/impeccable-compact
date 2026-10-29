@@ -121,13 +121,12 @@ Impeccable Compact 旨在：
 
 ## 使用
 
-不需要构建。直接把下面任意一个目录交给 agent：
+仓库：
+[watermelon-rider/impeccable-compact](https://github.com/watermelon-rider/impeccable-compact)
 
-```text
-skills/imp-compact/  构建或改进网站和网页应用
-skills/imp-style/    浏览并选择命名视觉方向
-skills/imp-bold/     应用显式指定的高表现力方向
-```
+把下面这句话交给 agent：
+
+> 从 https://github.com/watermelon-rider/impeccable-compact 安装 `skills/imp-compact`、`skills/imp-style` 和 `skills/imp-bold` 三个 skill。
 
 在 Codex 中一行安装全部三个 skill：
 
@@ -135,11 +134,19 @@ skills/imp-bold/     应用显式指定的高表现力方向
 python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" --repo watermelon-rider/impeccable-compact --path skills/imp-compact skills/imp-style skills/imp-bold
 ```
 
-例如：
+| Skill | 安装路径 | 用途 |
+|---|---|---|
+| [imp-compact](https://github.com/watermelon-rider/impeccable-compact/tree/main/skills/imp-compact) | `skills/imp-compact` | 构建或改进网站和网页应用 |
+| [imp-style](https://github.com/watermelon-rider/impeccable-compact/tree/main/skills/imp-style) | `skills/imp-style` | 浏览并选择命名视觉方向 |
+| [imp-bold](https://github.com/watermelon-rider/impeccable-compact/tree/main/skills/imp-bold) | `skills/imp-bold` | 应用显式指定的高表现力方向 |
+
+安装后，例如：
 
 ```text
-使用 skills/imp-compact 重新设计这个设置页面。
+使用 imp-compact 重新设计这个设置页面。
 ```
+
+不需要构建。下面的源码和测试只供维护者使用。
 
 `context`、`detect` 等依赖 runtime 的命令会调用兼容的 Impeccable engine。
 如果 engine 不可用，skill 会明确报告验证没有执行，而不是编造结果。
@@ -166,12 +173,10 @@ skills/imp-bold/scripts/bold select kinetic-type path/to/page.tsx
 ## 仓库结构
 
 ```text
-skills/imp-compact/  可直接使用的核心 skill
-skills/imp-style/    可直接使用的风格目录
-skills/imp-bold/     可直接使用的高表现力 skill
-src/skills/          维护者源码
-scripts/             构建和预览生成
-tests/               契约测试和可选行为测试
+skills/       可安装的 skill 目录
+src/skills/   维护者源码
+scripts/      构建和预览生成
+tests/        契约测试和可选行为测试
 ```
 
 ## 开发

@@ -129,14 +129,12 @@ an earlier Claude run, not a matched same-model A/B benchmark.
 
 ## Use
 
-No build step is required. Point your agent at one of the ready-to-use skill
-directories:
+Repository:
+[watermelon-rider/impeccable-compact](https://github.com/watermelon-rider/impeccable-compact)
 
-```text
-skills/imp-compact/  Build or improve a website or web app
-skills/imp-style/    Browse and select a named visual direction
-skills/imp-bold/     Apply an explicitly requested high-expression direction
-```
+Give your agent this instruction:
+
+> Install the skills from https://github.com/watermelon-rider/impeccable-compact at paths `skills/imp-compact`, `skills/imp-style`, and `skills/imp-bold`.
 
 Install all three skills in Codex:
 
@@ -144,11 +142,20 @@ Install all three skills in Codex:
 python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" --repo watermelon-rider/impeccable-compact --path skills/imp-compact skills/imp-style skills/imp-bold
 ```
 
-For example:
+| Skill | Install path | Purpose |
+|---|---|---|
+| [imp-compact](https://github.com/watermelon-rider/impeccable-compact/tree/main/skills/imp-compact) | `skills/imp-compact` | Build or improve a website or web app |
+| [imp-style](https://github.com/watermelon-rider/impeccable-compact/tree/main/skills/imp-style) | `skills/imp-style` | Browse and select a named visual direction |
+| [imp-bold](https://github.com/watermelon-rider/impeccable-compact/tree/main/skills/imp-bold) | `skills/imp-bold` | Apply an explicitly requested high-expression direction |
+
+After installation, for example:
 
 ```text
-Use skills/imp-compact to redesign this settings page.
+Use imp-compact to redesign this settings page.
 ```
+
+No build step is required. The source and test files below are only for
+maintainers.
 
 Runtime-backed commands such as `context` and `detect` use a compatible
 Impeccable engine. If it is unavailable, the skill reports that verification
@@ -176,12 +183,10 @@ skills/imp-bold/scripts/bold select kinetic-type path/to/page.tsx
 ## Repository layout
 
 ```text
-skills/imp-compact/  Ready-to-use core skill
-skills/imp-style/    Ready-to-use style catalog
-skills/imp-bold/     Ready-to-use high-expression skill
-src/skills/          Maintainer source
-scripts/             Build and preview generation
-tests/               Contract and optional behavior tests
+skills/       Installable skill directories
+src/skills/   Maintainer source
+scripts/      Build and preview generation
+tests/        Contract and optional behavior tests
 ```
 
 ## Development
