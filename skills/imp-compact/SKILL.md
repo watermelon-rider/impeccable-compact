@@ -2,11 +2,11 @@
 name: imp-compact
 description: "Use when building or improving a responsive website or web app: landing pages, product screens, dashboards, forms, settings, onboarding, documentation surfaces, design critique, accessibility, responsive behavior, UX copy, and DESIGN.md systems. Use imp-bold for explicitly requested high-expression visual work or imp-style for browsing named styles."
 allowed-tools:
-  - Bash(scripts/compact context *)
-  - Bash(scripts/compact surface-brief *)
-  - Bash(scripts/compact detect *)
-  - Bash(scripts/compact hooks *)
-  - Bash(scripts/compact doctor *)
+  - Bash(sh scripts/compact context *)
+  - Bash(sh scripts/compact surface-brief *)
+  - Bash(sh scripts/compact detect *)
+  - Bash(sh scripts/compact hooks *)
+  - Bash(sh scripts/compact doctor *)
   - Read
   - Write
   - Edit
@@ -22,7 +22,7 @@ visual work and named style exploration belong to `imp-bold` and `imp-style`.
 ## Start
 
 1. Your first tool call must be
-   `<skill-base-dir>/scripts/compact context --target <path>` once. Keep the
+   `sh "<skill-base-dir>/scripts/compact" context --target <path>` once. Keep the
    project working directory. Do not list the workspace or read project files
    before it. Its output already includes PRODUCT.md and DESIGN.md; do not
    reread them. Reuse the result later in the same session.

@@ -156,20 +156,20 @@ could not run instead of silently inventing the result.
 Browse the static style references:
 
 ```sh
-skills/imp-style/scripts/style gallery
-skills/imp-bold/scripts/bold gallery
+sh "skills/imp-style/scripts/style" gallery
+sh "skills/imp-bold/scripts/bold" gallery
 ```
 
 Select a direction and hand it to core implementation:
 
 ```sh
-skills/imp-style/scripts/style select editorial path/to/page.tsx
+sh "skills/imp-style/scripts/style" select editorial path/to/page.tsx
 ```
 
 or:
 
 ```sh
-skills/imp-bold/scripts/bold select kinetic-type path/to/page.tsx
+sh "skills/imp-bold/scripts/bold" select kinetic-type path/to/page.tsx
 ```
 
 ## Current limits

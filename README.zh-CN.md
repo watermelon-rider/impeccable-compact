@@ -145,20 +145,20 @@ Impeccable Compact 旨在：
 浏览静态风格参考：
 
 ```sh
-skills/imp-style/scripts/style gallery
-skills/imp-bold/scripts/bold gallery
+sh "skills/imp-style/scripts/style" gallery
+sh "skills/imp-bold/scripts/bold" gallery
 ```
 
 选择方向并交给核心实现：
 
 ```sh
-skills/imp-style/scripts/style select editorial path/to/page.tsx
+sh "skills/imp-style/scripts/style" select editorial path/to/page.tsx
 ```
 
 或：
 
 ```sh
-skills/imp-bold/scripts/bold select kinetic-type path/to/page.tsx
+sh "skills/imp-bold/scripts/bold" select kinetic-type path/to/page.tsx
 ```
 
 ## 当前限制

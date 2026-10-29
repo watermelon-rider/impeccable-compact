@@ -31,7 +31,7 @@ before implementation.
 Write the contract body in a temporary file, then persist it through the runtime:
 
 ```sh
-{{scripts_path}}/compact surface-brief write <target> <body-file>
+sh "<skill-base-dir>/scripts/compact" surface-brief write <target> <body-file>
 ```
 
 Use this body shape:

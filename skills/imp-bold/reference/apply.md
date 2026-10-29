@@ -1,6 +1,7 @@
 # Apply an expressive direction
 
-Use this only after a style has been selected with `bold select`.
+Use this only after a style has been selected with
+`sh "<skill-base-dir>/scripts/bold" select`.
 
 ## 1. Resolve truth
 

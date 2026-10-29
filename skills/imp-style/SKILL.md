@@ -2,7 +2,7 @@
 name: imp-style
 description: "Use only when the user asks to browse, compare, or select a named visual style reference for a website or web app. Shows a fixed local catalog of static previews and returns a compact style brief for imp-compact."
 allowed-tools:
-  - Bash(scripts/style *)
+  - Bash(sh scripts/style *)
   - Read
 license: Apache 2.0
 ---
@@ -15,11 +15,11 @@ variants, or interactive style demos.
 ## Browse
 
 - Open the gallery with
-  `<skill-base-dir>/scripts/style gallery`.
+  `sh "<skill-base-dir>/scripts/style" gallery`.
 - List names and one-line summaries with
-  `<skill-base-dir>/scripts/style list`.
+  `sh "<skill-base-dir>/scripts/style" list`.
 - Show one entry with
-  `<skill-base-dir>/scripts/style show <id>`.
+  `sh "<skill-base-dir>/scripts/style" show <id>`.
 
 Use the gallery for the user's visual comparison. Do not load every preview
 image into model context.
@@ -29,7 +29,7 @@ image into model context.
 When the user chooses a style, run:
 
 ```sh
-<skill-base-dir>/scripts/style select <id> [target]
+sh "<skill-base-dir>/scripts/style" select <id> [target]
 ```
 
 This writes `.impeccable/style-choice.json` and

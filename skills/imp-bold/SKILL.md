@@ -2,8 +2,8 @@
 name: imp-bold
 description: "Use only when the user explicitly requests a high-expression website or web-app direction, or names one of its fixed styles: neo-brutalist, maximal collage, kinetic type, retro-futurist, spatial-generative, narrative-scroll, signal-glitch, or character-led. Provides a static catalog and applies one selected direction."
 allowed-tools:
-  - Bash(scripts/bold *)
-  - Bash(scripts/compact *)
+  - Bash(sh scripts/bold *)
+  - Bash(sh scripts/compact *)
   - Read
   - Write
   - Edit
@@ -18,11 +18,11 @@ explicitly; ordinary website and web-app requests stay with `imp-compact`.
 ## Browse
 
 - Open the fixed gallery:
-  `<skill-base-dir>/scripts/bold gallery`
+  `sh "<skill-base-dir>/scripts/bold" gallery`
 - List directions:
-  `<skill-base-dir>/scripts/bold list`
+  `sh "<skill-base-dir>/scripts/bold" list`
 - Inspect one direction:
-  `<skill-base-dir>/scripts/bold show <id>`
+  `sh "<skill-base-dir>/scripts/bold" show <id>`
 
 Show the gallery to the user. Do not read every preview into model context.
 
@@ -31,7 +31,7 @@ Show the gallery to the user. Do not read every preview into model context.
 Persist the chosen direction before implementation:
 
 ```sh
-<skill-base-dir>/scripts/bold select <id> [target]
+sh "<skill-base-dir>/scripts/bold" select <id> [target]
 ```
 
 This writes `.impeccable/style-choice.json` and `.impeccable/style-choice.md`
@@ -41,7 +41,7 @@ PRODUCT.md, DESIGN.md, or application source.
 ## Apply
 
 1. Your first tool call must be
-   `<skill-base-dir>/scripts/compact context --target <path>` once. Do not
+   `sh "<skill-base-dir>/scripts/compact" context --target <path>` once. Do not
    list the workspace or read project files before it.
 2. Read `.impeccable/style-choice.md` and
    [reference/apply.md](reference/apply.md) once.
