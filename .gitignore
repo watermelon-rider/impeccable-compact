@@ -1,7 +1,5 @@
-.skills-build/
-node_modules/
 *.log
+.DS_Store
 .impeccable/
 .env
 .env.*
-!.env.example

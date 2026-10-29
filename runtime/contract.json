@@ -1,7 +1,0 @@
-{
-  "binary": "impeccable",
-  "cacheRoot": "~/.impeccable/runtime",
-  "versionSource": "../ENGINE_VERSION",
-  "duplicateBinaryInPromptPackages": false
-}
-

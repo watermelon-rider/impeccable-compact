@@ -26,7 +26,6 @@ Impeccable Compact 旨在：
 - 只加载一个与当前任务相关的 playbook，而不是整棵参考树；
 - 避免每次请求都生成 comp、风格预览和图像资产；
 - 把高成本工作变成显式选择，而不是默认自动执行；
-- 在构建阶段强制检查 prompt 体积预算；
 - 让一般网站和网页应用任务保持轻量、快速。
 
 它不会刻意保留上游的每一项能力。
@@ -48,7 +47,7 @@ Impeccable Compact 旨在：
 
 ## 三个 skill
 
-构建目前生成三个 skill：
+仓库包含三个 skill：
 
 | Skill | 用途 |
 |---|---|
@@ -140,8 +139,6 @@ Impeccable Compact 旨在：
 使用 imp-compact 重新设计这个设置页面。
 ```
 
-不需要构建。下面的源码和测试只供维护者使用。
-
 `context`、`detect` 等依赖 runtime 的命令会调用兼容的 Impeccable engine。
 如果 engine 不可用，skill 会明确报告验证没有执行，而不是编造结果。
 
@@ -164,24 +161,11 @@ skills/imp-style/scripts/style select editorial path/to/page.tsx
 skills/imp-bold/scripts/bold select kinetic-type path/to/page.tsx
 ```
 
-## 仓库结构
-
-```text
-skills/       可安装的 skill 目录
-src/skills/   维护者源码
-scripts/      构建和预览生成
-tests/        契约测试和可选行为测试
-```
-
-## 开发
-
-仅供维护者使用的构建和测试命令见 [DEVELOPMENT.md](DEVELOPMENT.md)。
-
 ## 当前限制
 
 - 尚未完成与原版 skill 的浏览器渲染视觉 A/B；
 - 行为测试目前只覆盖一个 provider；
-- 暂未实现原生 iOS 和 Android package；
+- 暂未实现原生 iOS 和 Android skill；
 - 不附带 Impeccable engine binary；
 - 风格参考是刻意筛选的有限集合，不是完整的视觉流派目录。
 

@@ -29,7 +29,6 @@ Impeccable Compact is designed to:
 - load one task-specific playbook instead of a broad reference tree;
 - avoid per-request comps, generated style previews, and image pipelines;
 - make expensive work explicit rather than automatic;
-- enforce prompt-size budgets in the build;
 - keep ordinary website and web-app requests fast.
 
 It deliberately does **not** try to preserve every upstream feature.
@@ -52,7 +51,7 @@ turns, not from reducing the quality floor to a list of colors and fonts.
 
 ## Skills
 
-The build currently produces three skills:
+The repository contains three skills:
 
 | Skill | Purpose |
 |---|---|
@@ -150,9 +149,6 @@ After installation, for example:
 Use imp-compact to redesign this settings page.
 ```
 
-No build step is required. The source and test files below are only for
-maintainers.
-
 Runtime-backed commands such as `context` and `detect` use a compatible
 Impeccable engine. If it is unavailable, the skill reports that verification
 could not run instead of silently inventing the result.
@@ -176,26 +172,12 @@ or:
 skills/imp-bold/scripts/bold select kinetic-type path/to/page.tsx
 ```
 
-## Repository layout
-
-```text
-skills/       Installable skill directories
-src/skills/   Maintainer source
-scripts/      Build and preview generation
-tests/        Contract and optional behavior tests
-```
-
-## Development
-
-Maintainer-only build and test commands are documented in
-[DEVELOPMENT.md](DEVELOPMENT.md).
-
 ## Current limits
 
 - Browser-rendered visual A/B against the original skill is still outstanding.
 - Behavioral measurements currently cover one provider only.
-- Native iOS and Android packages are not implemented.
-- The compact package does not ship the Impeccable engine binary.
+- Native iOS and Android skills are not implemented.
+- These skills do not ship the Impeccable engine binary.
 - Style references are intentionally curated and finite; this is not an
   exhaustive catalog of every visual movement.
 
